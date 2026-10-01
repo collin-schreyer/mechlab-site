@@ -108,3 +108,10 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; justify-content: 
 footer nav { display: flex; flex-wrap: wrap; gap: 18px; }
 footer a { color: var(--slate); }
 .fine { font-size: 14px; color: var(--steel); max-width: 760px; }
+
+/* Free demo release Short, preserving the earlier trailer below. */
+.release-feature { display:grid; grid-template-columns:minmax(0,1fr) minmax(250px,320px); gap:64px; align-items:center; }
+.release-copy { max-width:640px; }
+.video.portrait { aspect-ratio:9/16; }
+.release-download { margin:16px 0 0; text-align:center; }
+@media (max-width:760px) { .release-feature { grid-template-columns:1fr; gap:32px; }.release-player { width:min(100%,320px); margin:0 auto; }.release-copy .btn { font-size:14px; }.nav { font-size:12px; letter-spacing:.1em; } }
